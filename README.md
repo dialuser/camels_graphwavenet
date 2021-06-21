@@ -7,5 +7,6 @@ To use for your own work, just implement the data loaders as requested.
 
 - readcamels.py, this is the main data preparation file for using CAMELS data
 - trainwavenetwu.py, this is the main driver of GraphWaveNet
+- gwnetmodel.py, the original GraphWaveNet model by Wu et al.
 - util_gtnet.py, contains utility functions
 - utils_wnet.py, contains utility functions
