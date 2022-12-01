@@ -1,0 +1,7 @@
+#!/bin/bash
+seq=365
+#--regen_df to re-generate DF
+#--regen_h5 to re-generate h5
+#turn --addstatics off to save the big array
+args="--seq $seq  --regen_h5 --forcing_type nldas"
+python readcamels365.py $args
