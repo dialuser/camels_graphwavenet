@@ -27,11 +27,18 @@ For lookback = 365 days [note: the datasets for 365 days are significantly large
 - `readcamels365.py`, this is the main data preparation file for using CAMELS data
 - `trainwavenetwu365.py`, this is the main driver of GraphWaveNet
 
-To reproduce my paper experimental results for lookback=30 days, run `runsample`
+To run experiments on your own system, you need to download the CAMELS datasets and Freddie Kratzert's NLDAS from HydroSHARE and put them under proper folers for the data generator to find.
 
-To generate data for 365 days, run `batchgen_365`
+To reproduce my paper experimental results for lookback=30 days,
 
-To run 365-day experiment, try `runsample365`
+- run `batch_datagen` to generate datasets for lookback=30 days
+- run `runsample` to train all 10 ensembles [this will take a long time]
+
+To reproduce my paper experimental results for lookback=30 days,
+
+- run `batchgen_365` to generate datasets for lookback=365 days
+- run `runsample365` to train all 10 ensembles [this will take a long long time]
+
 
 
 
