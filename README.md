@@ -11,6 +11,6 @@ To use for your own work, just implement the data loaders as requested.
 - util_gtnet.py, contains utility functions
 - utils_wnet.py, contains utility functions
 
-## to reproduce my paper results, run runsample
+To reproduce my paper results, run runsample
 
 
