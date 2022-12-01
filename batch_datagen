@@ -1,0 +1,5 @@
+#!/bin/bash
+# batch for generating datasets
+mycode=/work/02248/alexsund/maverick2/nwm/readcamels_log.py
+args="--seq 30 --addstatics --forcingtype nldas"
+python $mycode $args
