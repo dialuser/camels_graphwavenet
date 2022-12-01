@@ -10,3 +10,7 @@ To use for your own work, just implement the data loaders as requested.
 - gwnetmodel.py, the original GraphWaveNet model by Wu et al.
 - util_gtnet.py, contains utility functions
 - utils_wnet.py, contains utility functions
+
+## to reproduce my paper results, run runsample
+
+
