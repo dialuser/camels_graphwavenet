@@ -1,0 +1,15 @@
+#!/bin/bash
+#graphwavenet2
+#change to full path
+mycode=trainwavenetwu365.py
+similarity="euclidean"
+cutoff=98
+for seed in 3100151 3010943 3020843 3020925 3031413 3031515 3031601 3031705 3031839 3032005
+do
+#add --retrain to retrain
+seq=365
+batch_size=6
+args="--lazyload --L1Loss --seed $seed --addstatics --in_dim 32 --addaptadj --apt_size 10 --adjtype doubletransition --runtesting --forcingtype nldas --latenttype full --learnrate 5e-4 --weight_decay 1e-5 --nepoch 30 --seq_length $seq --batch_size $batch_size  --netlatent 27 --netcutoff $cutoff --hiddensize 32 --gcn_bool --similarity $similarity --nhid 32 --dropout 0.3 --clipnorm 5.0"
+python $mycode $args
+wait
+done
