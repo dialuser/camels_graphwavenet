@@ -22,6 +22,9 @@ For lookback = 30 days
 - `util_gtnet.py`, contains utility functions
 - `utils_wnet.py`, contains utility functions
 
+- `trainwavenetwuimpute.py`, main driver for gage imputation (aka prediction at ungaged basins)
+- `gwnetmodel_impute.py`, modified GraphWaveNet model for gage imputation experiments
+
 For lookback = 365 days [note: the datasets for 365 days are significantly larger. I had to switch to HDF format for data loading]
 
 - `readcamels365.py`, this is the main data preparation file for using CAMELS data
