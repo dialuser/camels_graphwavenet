@@ -37,7 +37,7 @@ To reproduce my paper experimental results for lookback=30 days,
 - run `batch_datagen` to generate datasets for lookback=30 days
 - run `runsample` to train all 10 ensembles [this will take a long time]
 
-To reproduce my paper experimental results for lookback=30 days,
+To reproduce my paper experimental results for lookback=365 days,
 
 - run `batchgen_365` to generate datasets for lookback=365 days
 - run `runsample365` to train all 10 ensembles [this will take a long long time]
